@@ -1,45 +1,37 @@
 @font-face {
-    font-family: "Dirooz";
-    src: url("../Font/Dirooz.woff");
-}
+  font-family: "Dirooz";
+  src: url("../Font/Dirooz.woff"); }
 
 :root {
-    --color-purple-primary: #4c0083;
-    --color-white: #fff;
-    --color-gray-dark: #666;
-}
+  --color-purple-primary: #4c0083;
+  --color-white: #fff;
+  --color-gray-dark: #666; }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: Dirooz;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Dirooz; }
 
 .date-box {
-    width: fit-content;
-    box-shadow: 0 0 10px #aaa;
-    border-radius: 3px;
-    padding: 20px;
-}
-.date-box__form {
+  width: fit-content;
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 3px;
+  padding: 20px; }
+  .date-box__form {
     display: flex;
     gap: 15px;
-    align-items: center;
-}
-.date-box__form:not(:last-child) {
-    margin-bottom: 20px;
-}
-.date-box__p {
+    align-items: center; }
+    .date-box__form:not(:last-child) {
+      margin-bottom: 20px; }
+  .date-box__p {
     font-size: 17px;
-    font-weight: 600;
-}
-.date-box__span {
-    color: var(--color-purple-primary);
-}
-.date-box__input {
+    font-weight: 600; }
+  .date-box__span {
+    color: var(--color-purple-primary); }
+  .date-box__input {
     width: 40px;
     text-align: center;
     height: 40px;
@@ -47,8 +39,8 @@
     background: #e0e0e0;
     border-radius: 3px;
     appearance: none;
-    font-size: 17px;
-}
-.date-box__input--year {
-    width: 55px;
-}
+    font-size: 17px; }
+    .date-box__input:focus {
+      outline-color: var(--color-gray-dark); }
+    .date-box__input--year {
+      width: 55px; }

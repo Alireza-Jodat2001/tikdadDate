@@ -53,6 +53,10 @@
         appearance: none;
         font-size: 17px;
 
+        &:focus {
+            outline-color: var(--color-gray-dark);
+        }
+
         &--year {
             width: 55px;
         }

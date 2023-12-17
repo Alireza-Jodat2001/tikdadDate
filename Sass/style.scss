@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Dirooz";
+    src: url("../Font/Dirooz.woff");
+}
+
+:root {
+    --color-purple-primary: #4c0083;
+    --color-white: #fff;
+    --color-gray-dark: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Dirooz;
+}
+
+.date-box {
+    width: fit-content;
+    box-shadow: 0 0 10px #aaa;
+    border-radius: 3px;
+    padding: 20px;
+
+    &__form {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__p {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    &__span {
+        color: var(--color-purple-primary);
+    }
+
+    &__input {
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        border: 0;
+        background: rgb(224, 224, 224);
+        border-radius: 3px;
+        appearance: none;
+        font-size: 17px;
+
+        &--year {
+            width: 55px;
+        }
+    }
+}
